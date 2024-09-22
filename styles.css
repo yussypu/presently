@@ -1,0 +1,344 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Background */
+body {
+    background: linear-gradient(135deg, #6a0dad, #320d8d);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff007f;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #4b0082, #2a0553);
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInText 2s ease-in-out;
+}
+
+.header-content p {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #c8c8c8;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d9006f;
+    transform: scale(1.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.feature-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.feature-text p {
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Prompt Box */
+.prompt-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.prompt-box input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.prompt-box img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial h4 {
+    font-size: 1.2em;
+    color: #ff007f;
+    margin-top: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: #2a0553;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.price-card {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.price-card h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.price-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.price-card button {
+    padding: 15px 30px;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.price-card button:hover {
+    background-color: #d9006f;
+    transform: scale(1.05);
+}
+
+/* Centering CTA Section */
+.cta-section {
+    background-color: #320d8d;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d9006f;
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    color: #c8c8c8;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    background-color: #ff007f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#backToTopBtn:hover {
+    background-color: #d9006f;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: #320d8d;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.newsletter input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ff007f;
+}
+
+.newsletter button {
+    padding: 15px 30px;
+    background-color: #ff007f;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #d9006f;
+    transform: scale(1.05);
+}
